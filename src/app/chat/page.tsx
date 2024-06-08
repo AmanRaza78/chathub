@@ -34,7 +34,7 @@ export default async function ChatRoom(){
 
     const data = await getData()
     return(
-        <div className="h-screen bg-muted flex flex-col">
+        <div className="h-screen bg-muted flex flex-col overflow-y-scroll">
             <MessageBox data={data}/>
             <ChatForm/>
         </div>
