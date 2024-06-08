@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import Link from "next/link";
 
 export default function Home() {
@@ -17,9 +18,9 @@ export default function Home() {
           </p>
         </div>
         <div className="text-center">
-          <Link href="/">
+          <LoginLink href="/">
             <Button className="shadow-lg">Get Started</Button>
-          </Link>
+          </LoginLink>
         </div>
       </div>
     </div>
