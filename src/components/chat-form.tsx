@@ -3,6 +3,7 @@ import { postMessage } from "@/app/action";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useRef } from "react";
+import SubmitButton from "./submit-button";
 
 export default function ChatForm() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -24,9 +25,7 @@ export default function ChatForm() {
           className="flex-grow py-2 outline-none"
         />
 
-        <Button type="submit" className="rounded-full">
-          Send
-        </Button>
+        <SubmitButton/>
       </div>
     </form>
   );

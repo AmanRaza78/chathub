@@ -29,7 +29,7 @@ export async function postMessage(formData: FormData) {
     useTLS: true
   });
 
-  pusher.trigger("chat", "chat-event", {
+  await pusher.trigger("chat", "chat-event", {
     message: `${JSON.stringify(data)}\n\n`
   });
 
