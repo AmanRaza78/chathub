@@ -32,6 +32,6 @@ export async function GET() {
   return NextResponse.redirect(
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000/chat"
-      : "https://chathub-theta.vercel.app/chat"
+      : "https://chathub-plum.vercel.app/chat"
   );
 }
